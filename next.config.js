@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // App Router is now stable in Next.js 14
+  compress: true,
+  swcMinify: true,
+  experimental: {
+    optimizeCss: true,
+  },
+  images: {
+    formats: ['image/webp', 'image/avif'],
+  },
 }
 
 module.exports = nextConfig

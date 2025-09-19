@@ -1,0 +1,25 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# CSS files
+*.css text
+
+# JavaScript files
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+
+# JSON files
+*.json text
+
+# Markdown files
+*.md text
+
+# Config files
+*.config.js text
+*.config.ts text
+
+# Package files
+package.json text
+package-lock.json text
