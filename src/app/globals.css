@@ -154,7 +154,7 @@ body::before {
 
 /* Botones */
 .btn-primary {
-  @apply px-8 py-4 rounded-xl font-medium transition-all duration-300 text-lg;
+  @apply px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-medium transition-all duration-300 text-sm sm:text-base md:text-lg;
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   color: var(--color-bg-dark);
   border: 1px solid var(--color-primary);
@@ -202,10 +202,17 @@ body::before {
 
 /* Texto motivador */
 .text-motivational {
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--color-text-secondary);
   font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  .text-motivational {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
 }
 
 .text-motivational strong {

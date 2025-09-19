@@ -41,7 +41,7 @@ export default function ProjectCard({
 
   const CardContent = () => (
     <motion.div
-      className={`glass rounded-xl p-8 h-full flex flex-col justify-between ${
+      className={`glass rounded-xl p-6 sm:p-8 h-full flex flex-col justify-between ${
         isComingSoon ? 'opacity-60' : ''
       }`}
       variants={cardVariants}
@@ -52,21 +52,21 @@ export default function ProjectCard({
     >
       <div>
         <motion.h3 
-          className="text-2xl font-display font-bold holo-text mb-4"
+          className="text-xl sm:text-2xl font-display font-bold holo-text mb-3 sm:mb-4"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         >
           {title}
         </motion.h3>
-        <p className="text-gray-300 leading-relaxed mb-6 text-sm">
+        <p className="text-gray-300 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
           {description}
         </p>
       </div>
 
       <div>
         {isComingSoon ? (
-          <div className="text-center py-3">
-            <span className="text-gray-500 text-sm font-medium">
+          <div className="text-center py-2 sm:py-3">
+            <span className="text-gray-500 text-xs sm:text-sm font-medium">
               Próximamente...
             </span>
           </div>
@@ -75,15 +75,15 @@ export default function ProjectCard({
             href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary inline-block text-center w-full"
+            className="btn-primary inline-block text-center w-full text-xs sm:text-sm"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
             {ctaText}
           </motion.a>
         ) : (
-          <div className="text-center py-3">
-            <span className="text-gray-500 text-sm font-medium">
+          <div className="text-center py-2 sm:py-3">
+            <span className="text-gray-500 text-xs sm:text-sm font-medium">
               {ctaText}
             </span>
           </div>

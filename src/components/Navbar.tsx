@@ -28,7 +28,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'glass py-4' : 'py-6'
+        isScrolled ? 'glass py-3 sm:py-4' : 'py-4 sm:py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,10 +39,10 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <h1 className="text-2xl font-display font-bold holo-text">
+            <h1 className="text-xl sm:text-2xl font-display font-bold holo-text">
               JeyLabbb
             </h1>
-            <p className="text-xs text-gray-400 font-light -mt-1 ai-engines-text">
+            <p className="text-xs sm:text-xs text-gray-400 font-light -mt-1 ai-engines-text">
               AI Engines
             </p>
           </motion.div>
